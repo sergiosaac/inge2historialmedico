@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "296035738104",
+    "project_id": "firebase-miprimeraapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296035738104:android:25e0a287ddf191af",
+        "android_client_info": {
+          "package_name": "com.example.usuario.miprimeraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296035738104-t0nfaui3nnr5ado1t47sj9rf1rb704a4.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "296035738104-jui1a7tm24nefc6jb08iioiv8l93th07.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.usuario.miprimeraapp",
+            "certificate_hash": "42338dc433288979b764581b76d4fe532fd15a3c"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaGIFYK_cTeEZNOyYAOoHVQmKJ8NaY6jc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

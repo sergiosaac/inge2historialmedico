@@ -21,6 +21,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.2.0_d613d45968e18493400cfdeadd0e7127b501529d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,12 +57,57 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.2.0_2d17682830329e4314dc0989d6ba31f1cbe08214\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.2.0_8c39cc0dee40d5576042d61120b1ea9fbec76337\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.2.0_04ee2d854facdbaf21d2eef568104f3dd2babe76\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_b48ae060a08e89b0a0b7c2c4c16e25faf13967b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
         <dex dex="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_d5a6c0ccc85570292ce9671910d969e6f6fdba5c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.2.0_9483375f234b601cbdc83a7af22e3d9e463f1c0a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -72,6 +126,15 @@
         revision="25.0.2"
         sha1="0d5cbbbfe040201c7569478b70a13b58fd11aab4">
         <dex dex="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.2.0_bcfe71028c3c9f21ab795838833e35f74677a9e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_6a4bcdf10ac3169fd18fa817dee3b304445c8c75\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -156,6 +219,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.2.0_f5667d0254155b970d85bd8fccd4b24475e68c92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -210,12 +282,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.2.0_412e644d2ad16eedae9f2ba723319b74bcec04f8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
         <dex dex="C:\Users\Usuario\AndroidStudioProjects\Miprimeraapp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.2.0_3c60a63f143280cd1199054136495469375ac8f3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d52e772bc054b16ecc07e3f2473c2f06aa181a5">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_69ac314cb020c03f42e0dd9a3267ee8efc416261\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.2.0_eff10301a97f9cdbaf468ee446f40f561dc7a470\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -264,12 +363,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce9112e08a027c8620ae693983e38cdbb9f6371b">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.2.0_e3e3f86cff742c0e320a7c336d0034867d8346e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Usuario\Desktop\is2\historial prueba\historialmedico-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ea0cf4640f5effa531eff82120c54a09aeb90575">
         <dex dex="C:\Users\Usuario\Desktop\is2\historial prueba\historialmedico-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_35d057afbb883fac7f3e8db65d71c7bb6b27807e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.2.0_e63b8b26e5cf1fe4ba2e5aeef5efa763abafe4b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.2.0_c472142d0505fae2c02070050b0414f6e1170b3d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -297,6 +423,33 @@
         revision="25.0.2"
         sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
         <dex dex="C:\Users\Usuario\Desktop\is2\historial prueba\historialmedico-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.2.0_e09f0d2639627836c36b79c713a3792d6d81a1af\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.2.0_c2df82c11694eb93325d25e8e9246c789841e990\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d6951cb416ebf8c66a32b9480808ca247b68344">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.2.0_2bd1a93a02773d56df6e691c9404385868fccbe1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a61e7010aa7be5da53cd1bc5279630510c9a4912">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.2.0_e25fe4131508eb9bd3d971bf1d4eb4c4647320b5\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -333,6 +486,33 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\Usuario\Desktop\is2\historial prueba\historialmedico-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.2.0_1c3b753e8e9e9e2019d26492c5afac9d012f63fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.2.0_26216366fc89ef20280f9f88ffda14619fa8aff1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30ffec877d9932b5b063dba682675bae283a5c98">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_438f7dd0e9c204e0f7c11041b41a718ebe9b3438\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="C:\Users\Usuario\Desktop\viernesinge2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.2.0_bdb91363536146158e8d2be57e894f6402aded81\classes.dex" />
     </item>
     <item
         is-multidex="true"

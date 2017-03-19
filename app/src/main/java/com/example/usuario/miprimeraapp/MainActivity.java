@@ -1,6 +1,8 @@
 package com.example.usuario.miprimeraapp;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,6 +23,8 @@ import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private ImageView photoImageView;
@@ -35,20 +39,38 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Manejador_sqlite helper = new Manejador_sqlite(this);
+        //Manejador_sqlite helper = new Manejador_sqlite(this);
+        Clase_BaseDatos admin = new Clase_BaseDatos(this,
+                "administracion", null, 1);
 
+        SQLiteDatabase bd = admin.getWritableDatabase();
+
+
+        ContentValues registro = new ContentValues();
+
+        Random rnd = new Random();
+        registro.put("id", rnd.nextInt());
+        registro.put("nombre", "Fabian");
+        registro.put("apellido", "Asuncion");
+        registro.put("fecha_nacimiento", "43/93");
+        registro.put("sexo", "masculino");
+
+        // los inserto en la base de datos
+        bd.insert("hijos", null, registro);
+
+        bd.close(); 
 
         photoImageView = (ImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
         idTextView = (TextView) findViewById(R.id.idTextView);
 
-        TextView text = (TextView)findViewById(R.id.text);
-        helper.abrir();
-        helper.insertarReg("jorge", "lopez","18/02/2017", "M");
-        String x[] = helper.leer();
-        text.setText(x[1]);
-        helper.cerrar();
+        //TextView text = (TextView)findViewById(R.id.text);
+        //helper.abrir();
+        //helper.insertarReg("jorge", "lopez","18/02/2017", "M");
+        //String x[] = helper.leer();
+        //text.setText(x[1]);
+        //helper.cerrar();
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()

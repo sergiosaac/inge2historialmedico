@@ -20,7 +20,6 @@ public class Datos {
         this.sexo = sexo;
     }
 
-    // Recuperar/establecer ID
     public int getID() {
         return id;
     }
@@ -28,7 +27,6 @@ public class Datos {
         this.id = id;
     }
 
-    // Recuperar/establecer NOMBRE
     public String getNombre() {
         return nombre;
     }
@@ -36,7 +34,6 @@ public class Datos {
         this.nombre = nombre;
     }
 
-    // Recuperar/establecer TELEFONO
     public String getApellido() {
         return apellido;
     }
@@ -44,7 +41,6 @@ public class Datos {
         this.apellido = apellido;
     }
 
-    // Recuperar/establecer EMAIL
     public String getNacimiento() {
         return fecha ;
     }

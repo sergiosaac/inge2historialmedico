@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
+
         //Manejador_sqlite helper = new Manejador_sqlite(this);
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
                 "administracion", null, 1);

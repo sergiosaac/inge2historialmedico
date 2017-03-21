@@ -22,7 +22,8 @@ public class Clase_BaseDatos extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         //aquí creamos la tabla de usuario (dni, nombre, ciudad, numero)
-        db.execSQL("create table hijos(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
+        //db.execSQL("create table vacuna(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
+        db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
 
     }
 

@@ -25,6 +25,9 @@ public class Manejador_sqlite extends SQLiteOpenHelper {
         String query = "CREATE TABLE Hijos ("+_ID+" INTEGER PRIMARY KEY AUTOINCREMENT," +
              "nombre TEXT, apellido TEXT, fecha_nacimiento DATE, sexo TEXT);";
         db.execSQL(query);
+
+        String query2 = "create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)";
+        db.execSQL(query2);
     }
 
     @Override
@@ -76,6 +79,3 @@ public class Manejador_sqlite extends SQLiteOpenHelper {
         this.close();
     }
 }
-
-
-

@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -36,14 +37,17 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private TextView emailTextView;
     private TextView idTextView;
 
+
     private ListView list;
 
+    Button vacunas;
     private GoogleApiClient googleApiClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //Manejador_sqlite helper = new Manejador_sqlite(this);
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
@@ -52,11 +56,11 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         SQLiteDatabase bd = admin.getWritableDatabase();
 
 
-       /* ContentValues registro = new ContentValues();
+        ContentValues registro = new ContentValues();
 
         Random rnd = new Random();
         registro.put("id", rnd.nextInt());
-        registro.put("nombre", "Sergio");
+        registro.put("nombre", "Fabian");
         registro.put("apellido", "Asuncion");
         registro.put("fecha_nacimiento", "43/93");
         registro.put("sexo", "masculino");
@@ -64,13 +68,19 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         // los inserto en la base de datos
         bd.insert("hijos", null, registro);
 
-        bd.close();*/
+        //bd.close();
 
         photoImageView = (ImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
         idTextView = (TextView) findViewById(R.id.idTextView);
 
+        //TextView text = (TextView)findViewById(R.id.text);
+        //helper.abrir();
+        //helper.insertarReg("jorge", "lopez","18/02/2017", "M");
+        //String x[] = helper.leer();
+        //text.setText(x[1]);
+        //helper.cerrar();
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -81,12 +91,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-
-
         Cursor fila = bd.rawQuery(
 
                 "select nombre, apellido from hijos", null);
-
 
         ArrayList<String> nombreArrayList = new ArrayList<String>();
 
@@ -98,7 +105,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         } else
 
-            Toast.makeText(this, "No existe ningún usuario con ese dni",
+            Toast.makeText(this, "No existe ningún usuario con ese id",
 
                     Toast.LENGTH_SHORT).show();
 
@@ -106,8 +113,18 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nombreArrayList);
         list.setAdapter(adaptador);
 
-        this.crearTablaVacuna();
-        this.leerTablaVacuna();
+
+        /*boton vacunas*/
+        /* boton vacunas*/
+        vacunas = (Button)findViewById(R.id.btn2);
+        vacunas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent vacunas = new Intent (MainActivity.this, VacunaActivity.class);
+                startActivity(vacunas);
+            }
+        });
+
 
     }
 
@@ -180,59 +197,5 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
-    }
-
-    public void crearTablaVacuna (){
-
-        //db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
-
-        Clase_BaseDatos admin = new Clase_BaseDatos(this,
-                "administracion", null, 1);
-
-        SQLiteDatabase bd = admin.getWritableDatabase();
-
-        ContentValues registro = new ContentValues();
-
-        Random rnd = new Random();
-        registro.put("id", rnd.nextInt());
-        registro.put("edad", "7");
-        registro.put("dosis", "1");
-        registro.put("responsable", "Juan Perez");
-        registro.put("id_paciente", 1);
-
-        // los inserto en la base de datos
-        bd.insert("vacuna", null, registro);
-
-        bd.close();
-    }
-
-    public void leerTablaVacuna (){
-
-        Clase_BaseDatos admin = new Clase_BaseDatos(this,
-                "administracion", null, 1);
-
-        SQLiteDatabase bd = admin.getWritableDatabase();
-
-        Cursor fila = bd.rawQuery(
-
-                "select responsable from vacuna", null);
-
-
-        ArrayList<String> nombreArrayList = new ArrayList<String>();
-
-        if (fila.moveToFirst()) {
-
-            for (int i = 0; i < fila.getCount(); i++) {
-                nombreArrayList.add(fila.getString(0));
-            }
-
-        } else
-
-            Toast.makeText(this, "No hay vacunas",
-
-                    Toast.LENGTH_SHORT).show();
-
-        System.out.println("imprimir");
-        System.out.println(nombreArrayList.toString());
     }
 }

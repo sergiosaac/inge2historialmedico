@@ -7,7 +7,6 @@ package com.example.usuario.miprimeraapp;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import java.util.ArrayList;
@@ -34,6 +33,10 @@ public class Clase_BaseDatos extends SQLiteOpenHelper {
     @Override
 
     public void onUpgrade(SQLiteDatabase db, int version1, int version2) {
+
+        db.execSQL("drop table if exits vacuna");
+
+        db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
 
         db.execSQL("drop table if exists hijos");
 

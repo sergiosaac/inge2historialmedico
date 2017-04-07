@@ -4,10 +4,9 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         Random rnd = new Random();
         registro.put("id", rnd.nextInt());
-        registro.put("nombre", "Fabian");
+        registro.put("nombre", "Francisco");
         registro.put("apellido", "Asuncion");
         registro.put("fecha_nacimiento", "43/93");
         registro.put("sexo", "masculino");

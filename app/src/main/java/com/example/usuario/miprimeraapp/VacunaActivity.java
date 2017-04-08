@@ -27,25 +27,11 @@ public class VacunaActivity extends AppCompatActivity {
 
         SQLiteDatabase bd = admin.getWritableDatabase();
 
-
-        ContentValues detalles = new ContentValues();
-
-        Random rnd = new Random();
-        detalles.put("id", rnd.nextInt());
-        detalles.put("edad", "2 meses");
-        detalles.put("dosis", "primera");
-        detalles.put("fecha", "02/05/17");
-        detalles.put("responsable", "Lilian Marecos");
-        detalles.put("id_paciente",rnd.nextInt());
-
-        // los inserto en la base de datos
-        bd.insert("vacuna", null, detalles);
-
-        //bd.close();
+        //this.insertarVacunas();
 
         Cursor filavacuna = bd.rawQuery(
 
-                "select edad, dosis from vacuna", null);
+                "select responsable from vacuna where id_paciente = 3", null);
 
         ArrayList<String> nombre_ArrayList = new ArrayList<String>();
 
@@ -65,6 +51,73 @@ public class VacunaActivity extends AppCompatActivity {
         ArrayAdapter<String> adaptador2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nombre_ArrayList);
         list2.setAdapter(adaptador2);
 
+    }
+
+    private void insertarVacunas(){
+
+        Clase_BaseDatos admin = new Clase_BaseDatos(this,
+                "administracion", null, 1);
+
+        SQLiteDatabase bd = admin.getWritableDatabase();
+
+
+        ContentValues detalles = new ContentValues();
+
+        Random rnd = new Random();
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Lilian Marecos");
+        detalles.put("id_paciente",1);
+
+        bd.insert("vacuna", null, detalles);
+
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Juan Perez");
+        detalles.put("id_paciente",2);
+
+        bd.insert("vacuna", null, detalles);
+
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Jose Recaldo");
+        detalles.put("id_paciente",1);
+
+        bd.insert("vacuna", null, detalles);
+
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Maria Perez");
+        detalles.put("id_paciente",1);
+
+        bd.insert("vacuna", null, detalles);
+
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Juan Perez");
+        detalles.put("id_paciente",2);
+
+        bd.insert("vacuna", null, detalles);
+
+        detalles.put("id", rnd.nextInt());
+        detalles.put("edad", "2 meses");
+        detalles.put("dosis", "primera");
+        detalles.put("fecha", "02/05/17");
+        detalles.put("responsable", "Graciela Perez");
+        detalles.put("id_paciente",3);
+
+        // los inserto en la base de datos
+        bd.insert("vacuna", null, detalles);
 
     }
 }

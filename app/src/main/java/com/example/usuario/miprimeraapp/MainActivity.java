@@ -29,7 +29,11 @@ import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
@@ -80,37 +84,19 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
                 "administracion", null, 1);
 
-
-
         SQLiteDatabase bd = admin.getWritableDatabase();
 
         //admin.borrarTablasCrearDeNuevo(bd);
 
-        ContentValues registro = new ContentValues();
+        //this.insertarHijos();
 
-        Random rnd = new Random();
-        registro.put("id", rnd.nextInt());
-        registro.put("nombre", "Francisco");
-        registro.put("apellido", "Asuncion");
-        registro.put("fecha_nacimiento", "43/93");
-        registro.put("sexo", "masculino");
-
-        // los inserto en la base de datos
-        bd.insert("hijos", null, registro);
-
-        //bd.close();
+        System.out.println("Fechaaa");
+        System.out.println(this.getDatePhone());
 
         photoImageView = (ImageView) findViewById(R.id.photoImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
         idTextView = (TextView) findViewById(R.id.idTextView);
-
-        //TextView text = (TextView)findViewById(R.id.text);
-        //helper.abrir();
-        //helper.insertarReg("jorge", "lopez","18/02/2017", "M");
-        //String x[] = helper.leer();
-        //text.setText(x[1]);
-        //helper.cerrar();
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -123,7 +109,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
         Cursor fila = bd.rawQuery(
 
-                "select nombre, apellido from hijos", null);
+                "select nombre from hijos", null);
 
         ArrayList<String> nombreArrayList = new ArrayList<String>();
 
@@ -131,12 +117,13 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
             for (int i = 0; i < fila.getCount(); i++) {
                 nombreArrayList.add(fila.getString(0));
+                System.out.println(fila.getString(0));
+                fila.moveToNext();
             }
 
         } else
 
             Toast.makeText(this, "No existe ningún usuario con ese id",
-
                     Toast.LENGTH_SHORT).show();
 
         list = (ListView)findViewById(R.id.listview);
@@ -154,8 +141,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 startActivity(vacunas);
             }
         });
-
-
     }
 
     @Override
@@ -227,5 +212,102 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
+    }
+
+    private void insertarHijos(){
+
+        Clase_BaseDatos admin = new Clase_BaseDatos(this,
+                "administracion", null, 1);
+
+        SQLiteDatabase bd = admin.getWritableDatabase();
+
+        ContentValues registro = new ContentValues();
+
+        Random rnd = new Random();
+        registro.put("id", 1);
+        registro.put("nombre", "Juan");
+        registro.put("apellido", "Asuncion");
+        registro.put("fecha_nacimiento", "43/93");
+        registro.put("sexo", "masculino");
+
+        // los inserto en la base de datos
+        bd.insert("hijos", null, registro);
+
+        registro.put("id", 2);
+        registro.put("nombre", "Maria");
+        registro.put("apellido", "Luque");
+        registro.put("fecha_nacimiento", "43/93");
+        registro.put("sexo", "femenimo");
+
+        // los inserto en la base de datos
+        bd.insert("hijos", null, registro);
+
+        registro.put("id", 3);
+        registro.put("nombre", "Pedro");
+        registro.put("apellido", "Asuncion");
+        registro.put("fecha_nacimiento", "43/93");
+        registro.put("sexo", "masculino");
+
+        // los inserto en la base de datos
+        bd.insert("hijos", null, registro);
+
+        registro.put("id", 4);
+        registro.put("nombre", "Blanca");
+        registro.put("apellido", "Capiata");
+        registro.put("fecha_nacimiento", "43/93");
+        registro.put("sexo", "feminino");
+
+        // los inserto en la base de datos
+//        bd.insert("hijos", null, registro);
+//
+//        registro.put("id", 5);
+//        registro.put("nombre", "Juan");
+//        registro.put("apellido", "Asuncion");
+//        registro.put("fecha_nacimiento", "43/93");
+//        registro.put("sexo", "masculino");
+//
+//        // los inserto en la base de datos
+//        bd.insert("hijos", null, registro);
+//
+//        registro.put("id", 6);
+//        registro.put("nombre", "Maria");
+//        registro.put("apellido", "Luque");
+//        registro.put("fecha_nacimiento", "43/93");
+//        registro.put("sexo", "femenimo");
+//
+//        // los inserto en la base de datos
+//        bd.insert("hijos", null, registro);
+//
+//        registro.put("id", 7);
+//        registro.put("nombre", "Pedro");
+//        registro.put("apellido", "Asuncion");
+//        registro.put("fecha_nacimiento", "43/93");
+//        registro.put("sexo", "masculino");
+//
+//        // los inserto en la base de datos
+//        bd.insert("hijos", null, registro);
+//
+//        registro.put("id", 8);
+//        registro.put("nombre", "Blanca");
+//        registro.put("apellido", "Capiata");
+//        registro.put("fecha_nacimiento", "43/93");
+//        registro.put("sexo", "feminino");
+//
+//        // los inserto en la base de datos
+//        bd.insert("hijos", null, registro);
+
+
+
+        //bd.close();
+
+    }
+
+    private String getDatePhone()
+    {
+        Calendar cal = new GregorianCalendar();
+        Date date = cal.getTime();
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        String formatteDate = df.format(date);
+        return formatteDate;
     }
 }

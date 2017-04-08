@@ -49,13 +49,13 @@ public class Clase_BaseDatos extends SQLiteOpenHelper {
 
     public void borrarTablasCrearDeNuevo(SQLiteDatabase db) {
 
-        db.execSQL("drop table if exists vacuna");
-
-        db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
-
         db.execSQL("drop table if exists hijos");
 
         db.execSQL("create table hijos(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
+
+        db.execSQL("drop table if exists vacuna");
+
+        db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
 
     }
 

@@ -1,5 +1,7 @@
 package com.example.usuario.miprimeraapp;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -7,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -35,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     private TextView nameTextView;
     private TextView emailTextView;
     private TextView idTextView;
-
+    NotificationCompat.Builder mBuilder;
+    int mNotificationId = 001;
 
     private ListView list;
 
@@ -47,8 +51,34 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*creacion de notificacion*/
+        mBuilder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(android.R.drawable.ic_notification_clear_all)
+                        .setContentTitle("Agenda Pediatrica")
+                        .setContentText("Tienes un nuevo mensaje");
+        //Activity que se lanza al hacer click en la notificacion
+        Intent resultIntent = new Intent(this, VacunaActivity.class);
 
-        //Manejador_sqlite helper = new Manejador_sqlite(this);
+    // Because clicking the notification opens a new ("special") activity, there's
+    // no need to create an artificial back stack.
+        PendingIntent resultPendingIntent =
+                PendingIntent.getActivity(
+                        this,
+                        0,
+                        resultIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT
+                );
+        mBuilder.setContentIntent(resultPendingIntent);
+
+        NotificationManager mNotifyMgr =
+                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        // Builds the notification and issues it.
+        mNotifyMgr.notify(mNotificationId, mBuilder.build());
+
+
+
+
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
                 "administracion", null, 1);
 

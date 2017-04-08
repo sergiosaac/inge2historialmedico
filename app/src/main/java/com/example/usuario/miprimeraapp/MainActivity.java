@@ -77,13 +77,14 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mNotifyMgr.notify(mNotificationId, mBuilder.build());
 
 
-
-
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
                 "administracion", null, 1);
 
+
+
         SQLiteDatabase bd = admin.getWritableDatabase();
 
+        //admin.borrarTablasCrearDeNuevo(bd);
 
         ContentValues registro = new ContentValues();
 

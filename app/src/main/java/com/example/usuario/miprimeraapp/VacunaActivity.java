@@ -23,7 +23,7 @@ public class VacunaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vacuna);
 
         Clase_BaseDatos admin = new Clase_BaseDatos(this,
-                "admin", null, 1);
+                "administracion", null, 1);
 
         SQLiteDatabase bd = admin.getWritableDatabase();
 

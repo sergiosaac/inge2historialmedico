@@ -26,7 +26,10 @@ public class Clase_BaseDatos extends SQLiteOpenHelper {
 
 
         //db.execSQL("create table vacuna(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
+
         db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
+
+        //db.execSQL("create table hijos(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
 
     }
 
@@ -35,6 +38,18 @@ public class Clase_BaseDatos extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int version1, int version2) {
 
         db.execSQL("drop table if exits vacuna");
+
+        db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
+
+        db.execSQL("drop table if exists hijos");
+
+        db.execSQL("create table hijos(id integer primary key, nombre text, apellido text, fecha_nacimiento text, sexo text)");
+
+    }
+
+    public void borrarTablasCrearDeNuevo(SQLiteDatabase db) {
+
+        db.execSQL("drop table if exists vacuna");
 
         db.execSQL("create table vacuna(id integer primary key, edad text, dosis text, fecha text, lote text, responsable text,id_paciente integer)");
 

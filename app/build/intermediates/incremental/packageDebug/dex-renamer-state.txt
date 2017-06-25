@@ -1,7 +1,0 @@
-#Sun Jun 25 17:13:02 PYT 2017
-base.0=C\:\\Users\\Usuario\\Desktop\\lab4-is2\\inge2historialmedico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d8e25df401ebb1e545b0b5e196fd0c09782864ac
-renamed.1=classes2.dex
-renamed.0=classes.dex
-file.1=C\:\\Users\\Usuario\\Desktop\\lab4-is2\\inge2historialmedico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c0144cf804aa9f19eed67a35a62f2ae85c0c44c\\classes.dex
-base.1=C\:\\Users\\Usuario\\Desktop\\lab4-is2\\inge2historialmedico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_6c0144cf804aa9f19eed67a35a62f2ae85c0c44c
-file.0=C\:\\Users\\Usuario\\Desktop\\lab4-is2\\inge2historialmedico\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_d8e25df401ebb1e545b0b5e196fd0c09782864ac\\classes.dex

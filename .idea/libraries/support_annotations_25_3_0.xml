@@ -1,11 +1,19 @@
 <component name="libraryTable">
   <library name="support-annotations-25.3.0">
     <CLASSES>
+<<<<<<< HEAD
       <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0-sources.jar!/" />
+=======
+      <root url="jar:///usr/local/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///usr/local/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0-sources.jar!/" />
+>>>>>>> 1b770c1d5f269d04cac8816b5e77cc775aa9bb14
     </SOURCES>
   </library>
 </component>

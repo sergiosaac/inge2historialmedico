@@ -3,6 +3,7 @@
 
     <item
         is-multidex="true"
+<<<<<<< HEAD
         jar="C:\Users\Usuario\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
         jumboMode="true"
         optimize="true"
@@ -184,10 +185,257 @@
     <item
         is-multidex="true"
         jar="C:\Users\Usuario\Desktop\lab4-is2\inge2historialmedico\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.0\jars\classes.jar"
+=======
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_292c71be3563fe8d03e7230b654a3d58653b183c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.0_bccbc7b588ce3367975c0ba0173a147ac900be41/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_a5c71ead0d55afa61bdc35a461c16fe938053b4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.0_3163f21fe923ce6509490d385c3aa74e1fa89344/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.0_b39a7d53a1e20071ebe31c172a39e226985ba92e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.3.0_ab164be8ab763d5fd704d45eb5e5a41e57a54b1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_fd0911c198b04b255c45fb050a74040d6cc78b3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.0_78becaeceda2c6971a88df4d5b77afc5bca1db9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.0_0482294b20cd632bbc5409f4d9efcdfe58184711/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d8cee06d6e5275dcb16ff1f442fd3aea23392ab5">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_951714eaa65225627f966d25bb76f30d7c894f03/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.0_e3d3744a394552c3ebc93d23c84fafd47c6b726b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3088f3e745ed18375f768d04e72e7b63daddf4a8">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3eb0af6e455fab68485280858baab0ed51be6098/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.3.0_f08142578b512a5e5ecf6cb34705fb262d7a1b5d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_8819b0e20767379328405fe04daf9e4feda219fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.0_b63d9b1d0dcad6b887f204452dcf2bd503ab883a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.0_54e49001811697426d85645745a227b103b95bcf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25c546a603754c7f3b01cb2e3dd9e9726350704a">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a8248de4bdc63eece3222f200043ec9b1d1f3410/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.3.0_49d1c22f3726e5ba41db512287d13a9859770812/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/usr/local/opt/android-sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_508320adbe3bd0cf34d56d9bc81eb9189e0de047/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.0_98efe3d2d1386d0a02d58cb91a0289a09a378772/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5225964312ba740caed619dbd0e0d80c8989713c">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a9c9f42c9a95d1e27a64a87e266cc13034e332b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.3.0_210922fbbeff49412e626acd9cf20ac4fadd8064/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_1e3a36c23a61d516e812b739309c7cd44ddc5dd5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_0a9009cf75c16b6e9b3d58cb04072f7157da6a6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_788770be07fb641a7121fda4e7636a160bd83263/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.3.0_da96fa9e00702d1b5c9a67656703192e0623d16c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_fdfc83c59dd98f657d45e3c01ab334ff8012e256/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.0/jars/classes.jar"
+>>>>>>> 1b770c1d5f269d04cac8816b5e77cc775aa9bb14
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+<<<<<<< HEAD
         <dex dex="C:\Users\Usuario\Desktop\lab4-is2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.3.0_e018b0bd04a8cc49f531799a173df7a45d941153\classes.dex" />
     </item>
     <item
@@ -261,6 +509,18 @@
         revision="25.0.2"
         sha1="b831d3902674d096189451d46fce219e2c2904b7">
         <dex dex="C:\Users\Usuario\Desktop\lab4-is2\inge2historialmedico\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.2.0_2dc3b27aa5c18755762a9f3b314c9447f29d5997\classes.dex" />
+=======
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_9abb190a48577d51a3858aec213ca82e7f08d0c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/Admin/Desktop/serviciorestandroid/Funcar/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_8f287b26e3f6b863678f09a4856c5b412689c60f/classes.dex" />
+>>>>>>> 1b770c1d5f269d04cac8816b5e77cc775aa9bb14
     </item>
 
 </items>

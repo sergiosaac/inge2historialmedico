@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="sign_out_and_disconnect" type="id">sign_out_and_disconnect</item>
+    <item name="container" type="id">container</item>
+    <item name="list" type="id">list</item>
+    <item name="name" type="id">name</item>
+    <item name="mobile" type="id">mobile</item>
+    <item name="email" type="id">email</item>
+    <item name="nombre" type="id">nombre</item>
+    <item name="edad" type="id">edad</item>
+    <item name="sexo" type="id">sexo</item>
+    <item name="fecha" type="id">fecha</item>
+    <item name="aplicada" type="id">aplicada</item>
 </resources>

@@ -2,16 +2,12 @@ package com.example.usuario.miprimeraapp;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -30,11 +26,9 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
@@ -62,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                         .setContentTitle("Agenda Pediatrica")
                         .setContentText("Tienes un nuevo mensaje");
         //Activity que se lanza al hacer click en la notificacion
-        Intent resultIntent = new Intent(this, VacunaActivity.class);
+        Intent resultIntent = new Intent(this, VacunasActivity.class);
 
     // Because clicking the notification opens a new ("special") activity, there's
     // no need to create an artificial back stack.
@@ -81,15 +75,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mNotifyMgr.notify(mNotificationId, mBuilder.build());
 
 
-        Clase_BaseDatos admin = new Clase_BaseDatos(this,
-                "administracion", null, 1);
-
-        SQLiteDatabase bd = admin.getWritableDatabase();
-
-        //admin.borrarTablasCrearDeNuevo(bd);
-
-        //this.insertarHijos();
-
         System.out.println("Fechaaa");
         System.out.println(this.getDatePhone());
 
@@ -107,28 +92,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-        Cursor fila = bd.rawQuery(
-
-                "select nombre from hijos", null);
-
-        ArrayList<String> nombreArrayList = new ArrayList<String>();
-
-        if (fila.moveToFirst()) {
-
-            for (int i = 0; i < fila.getCount(); i++) {
-                nombreArrayList.add(fila.getString(0));
-                System.out.println(fila.getString(0));
-                fila.moveToNext();
-            }
-
-        } else
-
-            Toast.makeText(this, "No existe ningún usuario con ese id",
-                    Toast.LENGTH_SHORT).show();
-
-        list = (ListView)findViewById(R.id.listview);
-        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nombreArrayList);
-        list.setAdapter(adaptador);
 
 
         /*boton vacunas*/
@@ -137,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         vacunas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent vacunas = new Intent (MainActivity.this, VacunaActivity.class);
+                Intent vacunas = new Intent (MainActivity.this, InicioAppActivity.class);
                 startActivity(vacunas);
             }
         });
@@ -214,93 +177,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     }
 
-    private void insertarHijos(){
-
-        Clase_BaseDatos admin = new Clase_BaseDatos(this,
-                "administracion", null, 1);
-
-        SQLiteDatabase bd = admin.getWritableDatabase();
-
-        ContentValues registro = new ContentValues();
-
-        Random rnd = new Random();
-        registro.put("id", 1);
-        registro.put("nombre", "Juan");
-        registro.put("apellido", "Asuncion");
-        registro.put("fecha_nacimiento", "43/93");
-        registro.put("sexo", "masculino");
-
-        // los inserto en la base de datos
-        bd.insert("hijos", null, registro);
-
-        registro.put("id", 2);
-        registro.put("nombre", "Maria");
-        registro.put("apellido", "Luque");
-        registro.put("fecha_nacimiento", "43/93");
-        registro.put("sexo", "femenimo");
-
-        // los inserto en la base de datos
-        bd.insert("hijos", null, registro);
-
-        registro.put("id", 3);
-        registro.put("nombre", "Pedro");
-        registro.put("apellido", "Asuncion");
-        registro.put("fecha_nacimiento", "43/93");
-        registro.put("sexo", "masculino");
-
-        // los inserto en la base de datos
-        bd.insert("hijos", null, registro);
-
-        registro.put("id", 4);
-        registro.put("nombre", "Blanca");
-        registro.put("apellido", "Capiata");
-        registro.put("fecha_nacimiento", "43/93");
-        registro.put("sexo", "feminino");
-
-        // los inserto en la base de datos
-//        bd.insert("hijos", null, registro);
-//
-//        registro.put("id", 5);
-//        registro.put("nombre", "Juan");
-//        registro.put("apellido", "Asuncion");
-//        registro.put("fecha_nacimiento", "43/93");
-//        registro.put("sexo", "masculino");
-//
-//        // los inserto en la base de datos
-//        bd.insert("hijos", null, registro);
-//
-//        registro.put("id", 6);
-//        registro.put("nombre", "Maria");
-//        registro.put("apellido", "Luque");
-//        registro.put("fecha_nacimiento", "43/93");
-//        registro.put("sexo", "femenimo");
-//
-//        // los inserto en la base de datos
-//        bd.insert("hijos", null, registro);
-//
-//        registro.put("id", 7);
-//        registro.put("nombre", "Pedro");
-//        registro.put("apellido", "Asuncion");
-//        registro.put("fecha_nacimiento", "43/93");
-//        registro.put("sexo", "masculino");
-//
-//        // los inserto en la base de datos
-//        bd.insert("hijos", null, registro);
-//
-//        registro.put("id", 8);
-//        registro.put("nombre", "Blanca");
-//        registro.put("apellido", "Capiata");
-//        registro.put("fecha_nacimiento", "43/93");
-//        registro.put("sexo", "feminino");
-//
-//        // los inserto en la base de datos
-//        bd.insert("hijos", null, registro);
-
-
-
-        //bd.close();
-
-    }
 
     private String getDatePhone()
     {

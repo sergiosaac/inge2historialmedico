@@ -17,7 +17,7 @@
         android:textSize="18sp"
         android:textStyle="normal|bold"
         android:layout_margin="50px"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/common_google_signin_btn_text_light_focused" />
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -39,7 +39,7 @@
         android:textColor="@color/colorPrimaryDark" />
 
     <TextView
-        android:text="Sergio Amarilla"
+        android:text="Natan Monges"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView6"
@@ -50,9 +50,16 @@
         android:text="Fabian Lezcano"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView5"
-        android:layout_marginBottom="21dp"
-        android:layout_alignParentBottom="true"
+        android:id="@+id/textView8"
+        android:layout_above="@+id/textView5"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Sergio Amarilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView6" />
 
 </RelativeLayout>

@@ -46,7 +46,7 @@ public class VacunasActivity extends AppCompatActivity {
         new VacunasActivity.obtenerVacunas().execute();
 
         this.idHijo = getIntent().getExtras().getString("idHijo");
-        
+
 
     }
 

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "827619714664",
+    "firebase_url": "https://historiamedico-be654.firebaseio.com",
+    "project_id": "historiamedico-be654",
+    "storage_bucket": "historiamedico-be654.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827619714664:android:57ef37c48fa61503",
+        "android_client_info": {
+          "package_name": "com.example.admin.historialmedico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827619714664-4fgaqfa1omqos3mhcmt0shcpgqp1e49e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.historialmedico",
+            "certificate_hash": "a477f905feaaed73d4e5d56769c38dadc02d28b4"
+          }
+        },
+        {
+          "client_id": "827619714664-mgrvrjoanlpa9d5677itin09vbr54vot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXtZu-NTCqcYWiZgLjGGbgeWwHN4xRp90"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827619714664-mgrvrjoanlpa9d5677itin09vbr54vot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

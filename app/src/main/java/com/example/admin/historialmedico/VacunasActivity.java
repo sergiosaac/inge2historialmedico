@@ -1,13 +1,10 @@
 package com.example.admin.historialmedico;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -29,8 +26,10 @@ public class VacunasActivity extends AppCompatActivity {
     private ListView lv;
     Button vacunas;
 
+    private String idHijo;
+
     // URL to get contacts JSON
-    private static String url = "http://192.168.1.61:2222/vacunas.json";
+    private static String url = "http://192.168.1.61:8080/vacunas.json";
 
     ArrayList<HashMap<String, String>> contactList;
 
@@ -45,17 +44,7 @@ public class VacunasActivity extends AppCompatActivity {
 
         new VacunasActivity.obtenerVacunas().execute();
 
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                Intent vacunas = new Intent (VacunasActivity.this, VacunasActivity.class);
-                startActivity(vacunas);
-            }
-
-        });
+        this.idHijo = getIntent().getExtras().getString("idHijo");
 
     }
 
@@ -63,6 +52,8 @@ public class VacunasActivity extends AppCompatActivity {
      * Async task class to get json by making HTTP call
      */
     private class obtenerVacunas extends AsyncTask<Void, Void, Void> {
+
+        public String host = "http://192.168.1.61:8080";
 
         @Override
         protected void onPreExecute() {
@@ -77,10 +68,21 @@ public class VacunasActivity extends AppCompatActivity {
 
         @Override
         protected Void doInBackground(Void... arg0) {
-            HttpHandler sh = new HttpHandler();
+
+            HttpHandler nuevo = new HttpHandler();
+
+            JSONObject obj = new JSONObject();
+            try {
+                obj.put("idHijo", VacunasActivity.this.idHijo);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            String jsonStr = nuevo.sendHTTPData(this.host+"/WebApplication3/webresources/vacunas/obtenerVacunasPost/",obj);
 
             // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url);
+            //HttpHandler sh = new HttpHandler();
+            //String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);
 
@@ -93,7 +95,7 @@ public class VacunasActivity extends AppCompatActivity {
                         JSONObject c = jsonObj.getJSONObject(i);
 
                         String name = c.getString("nombre");
-                        String email = c.getString("fechaAplicacion");
+                        String email = c.getString("fecha_aplicacion");
                         String address = c.getString("aplicada");
 
 
@@ -110,7 +112,7 @@ public class VacunasActivity extends AppCompatActivity {
 
                         contact.put("name", name);
                         contact.put("email", email);
-                        contact.put("mobile", address);
+                        contact.put("mobile", "Inyectada: "+address);
 
                         // adding contact to contact list
                         contactList.add(contact);
@@ -134,7 +136,7 @@ public class VacunasActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(getApplicationContext(),
-                                "Couldn't get json from server. Check LogCat for possible errors!",
+                                "No se encontraron vacunas",
                                 Toast.LENGTH_LONG)
                                 .show();
                     }

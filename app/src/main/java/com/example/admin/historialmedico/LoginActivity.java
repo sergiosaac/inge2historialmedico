@@ -2,23 +2,35 @@ package com.example.admin.historialmedico;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 public class LoginActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     private GoogleApiClient googleApiClient;
 
+    public String host = "http://192.168.1.61:8080";
+
     private SignInButton signInButton;
+
+    static{
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+    }
 
     public static final int SIGN_IN_CODE = 777;
 
@@ -70,23 +82,56 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private void handleSignInResult(GoogleSignInResult result) {
 
         if (result.isSuccess()) {
-            goMainScreen();
+            goMainScreen(result);
         } else {
             Toast.makeText(this, "No se pudo iniciar la sesion", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void goMainScreen() {
+    private void goMainScreen(GoogleSignInResult result) {
 
-       
+        GoogleSignInAccount account = result.getSignInAccount();
 
-        if (true) {
-            Toast.makeText(this, "Usuario invalido", Toast.LENGTH_SHORT).show();
-            return;
+        HttpHandler nuevo = new HttpHandler();
+
+        JSONObject obj = new JSONObject();
+        try {
+            obj.put("email", account.getEmail());
+        } catch (JSONException e) {
+            e.printStackTrace();
         }
 
-        Intent intent = new Intent(this, MainActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        //Toast.makeText(this, nuevo.sendHTTPData("http://192.168.1.61:8080/WebApplication3/webresources/usuario/validarUsuario/",obj).toString(), Toast.LENGTH_SHORT).show();
+
+        String in = nuevo.sendHTTPData(this.host+"/WebApplication3/webresources/usuario/validarUsuario/",obj);
+
+        JSONObject reader = null;
+        try {
+            reader = new JSONObject(in);
+
+            //JSONObject main  = reader.getJSONObject("main");
+            String valido = reader.getString("valido");
+
+            if (valido == "false") {
+                Toast.makeText(this, "Usuario invalido", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            String idUsuario = reader.getString("idUsuario");
+
+            Intent intent = new Intent(this, MainActivity.class);
+            intent.putExtra("idUsuario", idUsuario);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
 }

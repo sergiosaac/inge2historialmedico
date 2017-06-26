@@ -20,6 +20,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,6 +29,16 @@ public class MainActivity extends AppCompatActivity {
     private ProgressDialog pDialog;
     private ListView lv;
     Button vacunas;
+
+    public String idUsuario;
+
+    public String getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(String idUsuario) {
+        this.idUsuario = idUsuario;
+    }
 
     // URL to get contacts JSON
     private static String url = "http://192.168.1.61:2222/hijos.json";
@@ -45,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         new obtenerHijos().execute();
 
+        this.setIdUsuario(getIntent().getExtras().getString("idUsuario"));
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
@@ -52,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 Intent vacunas = new Intent (MainActivity.this, VacunasActivity.class);
+
+                Random aleatorio = new Random(System.currentTimeMillis());
+                // Producir nuevo int aleatorio entre 0 y 99
+
+                int numero = aleatorio.nextInt(3);
+
+                vacunas.putExtra("idHijo", Integer.toString(aleatorio.nextInt(3)+1));
                 startActivity(vacunas);
             }
 
@@ -63,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
      * Async task class to get json by making HTTP call
      */
     private class obtenerHijos extends AsyncTask<Void, Void, Void> {
+
+        public String host = "http://192.168.1.61:8080";
 
         @Override
         protected void onPreExecute() {
@@ -79,8 +100,19 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... arg0) {
             HttpHandler sh = new HttpHandler();
 
+            HttpHandler nuevo = new HttpHandler();
+
+            JSONObject obj = new JSONObject();
+            try {
+                obj.put("idPadre", MainActivity.this.getIdUsuario());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            String jsonStr = nuevo.sendHTTPData(this.host+"/WebApplication3/webresources/hijo/obtenerHijosPost/",obj);
+
             // Making a request to url and getting response
-            String jsonStr = sh.makeServiceCall(url);
+            //String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);
 
@@ -134,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         Toast.makeText(getApplicationContext(),
-                                "Couldn't get json from server. Check LogCat for possible errors!",
+                                "No se encontraron registros..",
                                 Toast.LENGTH_LONG)
                                 .show();
                     }

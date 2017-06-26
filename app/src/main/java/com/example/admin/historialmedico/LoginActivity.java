@@ -23,7 +23,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     private GoogleApiClient googleApiClient;
 
-    public String host = "http://192.168.1.61:8080";
+    public String host = "http://10.9.100.164:8080";
 
     private SignInButton signInButton;
 
@@ -101,7 +101,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
             e.printStackTrace();
         }
 
-        //Toast.makeText(this, nuevo.sendHTTPData("http://192.168.1.61:8080/WebApplication3/webresources/usuario/validarUsuario/",obj).toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, nuevo.sendHTTPData("http://10.9.100.164:8080/WebApplication3/webresources/usuario/validarUsuario/",obj).toString(), Toast.LENGTH_SHORT).show();
 
         String in = nuevo.sendHTTPData(this.host+"/WebApplication3/webresources/usuario/validarUsuario/",obj);
 

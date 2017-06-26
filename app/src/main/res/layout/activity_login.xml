@@ -17,4 +17,42 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    </FrameLayout>
+
+    <TextView
+        android:text="Historial Médico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signInButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:id="@+id/textView"
+        android:textAlignment="textStart"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:text="Sergio Amarilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Fabian Lezcano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_marginBottom="21dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

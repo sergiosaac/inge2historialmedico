@@ -1,10 +1,13 @@
 package com.example.admin.historialmedico;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -41,8 +44,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // URL to get contacts JSON
-    private static String url = "http://192.168.1.61:2222/hijos.json";
+    private static String url = "http://10.9.100.164:2222/hijos.json";
 
+    NotificationCompat.Builder mBuilder;
+    int mNotificationId = 001;
     ArrayList<HashMap<String, String>> contactList;
 
     @Override
@@ -76,6 +81,33 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
+
+        mBuilder =
+                (NotificationCompat.Builder) new NotificationCompat.Builder(this)
+                        .setSmallIcon(android.R.drawable.ic_notification_clear_all)
+                        .setContentTitle("Agenda Pediatrica")
+                        .setContentText("Verifica tus vacunas pendientes...");
+
+        //Activity que se lanza al hacer click en la notificacion
+        Intent resultIntent = new Intent(this, NotificacionesActivity.class);
+
+        // Because clicking the notification opens a new ("special") activity, there's
+        // no need to create an artificial back stack.
+        PendingIntent resultPendingIntent =
+                PendingIntent.getActivity(
+                        this,
+                        0,
+                        resultIntent,
+                        PendingIntent.FLAG_UPDATE_CURRENT
+                );
+        mBuilder.setContentIntent(resultPendingIntent);
+
+        NotificationManager mNotifyMgr =
+                (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        // Builds the notification and issues it.
+        mNotifyMgr.notify(mNotificationId, mBuilder.build());
+
+
     }
 
     /**
@@ -83,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private class obtenerHijos extends AsyncTask<Void, Void, Void> {
 
-        public String host = "http://192.168.1.61:8080";
+        public String host = "http://10.9.100.164:8080";
 
         @Override
         protected void onPreExecute() {

@@ -1,10 +1,12 @@
 package com.example.admin.historialmedico;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -26,10 +28,11 @@ public class VacunasActivity extends AppCompatActivity {
     private ListView lv;
     Button vacunas;
 
+
     private String idHijo;
 
     // URL to get contacts JSON
-    private static String url = "http://192.168.1.61:8080/vacunas.json";
+    private static String url = "http://10.9.100.164:8080/vacunas.json";
 
     ArrayList<HashMap<String, String>> contactList;
 
@@ -46,6 +49,164 @@ public class VacunasActivity extends AppCompatActivity {
 
         this.idHijo = getIntent().getExtras().getString("idHijo");
 
+        Button boton = (Button) findViewById(R.id.abc);
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String host = "http://10.9.100.164:8080";
+
+                HttpHandler nuevo = new HttpHandler();
+
+                JSONObject obj = new JSONObject();
+                try {
+                    obj.put("idHijo", VacunasActivity.this.idHijo);
+                    obj.put("order", "nombre");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                String jsonStr = nuevo.sendHTTPData(host+"/WebApplication3/webresources/vacunas/obtenerVacunasPost/",obj);
+
+                Log.e(TAG, "Response from url: " + jsonStr);
+
+                if (jsonStr != null) {
+                    try {
+                        JSONArray jsonObj = new JSONArray(jsonStr);
+
+                        for (int i = 0; i < jsonObj.length(); i++) {
+                            JSONObject c = jsonObj.getJSONObject(i);
+
+                            String name = c.getString("nombre");
+                            String email = c.getString("fecha_aplicacion");
+                            String address = c.getString("aplicada");
+
+                            HashMap<String, String> contact = new HashMap<>();
+
+                            contact.put("name", name);
+                            contact.put("email", email);
+                            contact.put("mobile", "Inyectada: "+address);
+
+                            contactList.add(contact);
+                        }
+                    } catch (final JSONException e) {
+                        Log.e(TAG, "Json parsing error: " + e.getMessage());
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(),
+                                        "Json parsing error: " + e.getMessage(),
+                                        Toast.LENGTH_LONG)
+                                        .show();
+                            }
+                        });
+
+                    }
+                } else {
+                    Log.e(TAG, "Couldn't get json from server.");
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getApplicationContext(),
+                                    "No se encontraron vacunas",
+                                    Toast.LENGTH_LONG)
+                                    .show();
+                        }
+                    });
+
+                }
+
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(),
+                        "Ordenado alfabeticamente",
+                        Toast.LENGTH_LONG)
+                        .show();
+            }
+        });
+
+        Button fecha = (Button) findViewById(R.id.fecha);
+        fecha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String host = "http://10.9.100.164:8080";
+
+                HttpHandler nuevo = new HttpHandler();
+
+                JSONObject obj = new JSONObject();
+                try {
+                    obj.put("idHijo", VacunasActivity.this.idHijo);
+                    obj.put("order", "fecha_aplicacion");
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+                String jsonStr = nuevo.sendHTTPData(host+"/WebApplication3/webresources/vacunas/obtenerVacunasPost/",obj);
+
+                Log.e(TAG, "Response from url: " + jsonStr);
+
+                if (jsonStr != null) {
+                    try {
+                        JSONArray jsonObj = new JSONArray(jsonStr);
+
+                        for (int i = 0; i < jsonObj.length(); i++) {
+                            JSONObject c = jsonObj.getJSONObject(i);
+
+                            String name = c.getString("nombre");
+                            String email = c.getString("fecha_aplicacion");
+                            String address = c.getString("aplicada");
+
+                            HashMap<String, String> contact = new HashMap<>();
+
+                            contact.put("name", name);
+                            contact.put("email", email);
+                            contact.put("mobile", "Inyectada: "+address);
+
+                            contactList.add(contact);
+                        }
+                    } catch (final JSONException e) {
+                        Log.e(TAG, "Json parsing error: " + e.getMessage());
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(getApplicationContext(),
+                                        "Json parsing error: " + e.getMessage(),
+                                        Toast.LENGTH_LONG)
+                                        .show();
+                            }
+                        });
+
+                    }
+                } else {
+                    Log.e(TAG, "Couldn't get json from server.");
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            Toast.makeText(getApplicationContext(),
+                                    "No se encontraron vacunas",
+                                    Toast.LENGTH_LONG)
+                                    .show();
+                        }
+                    });
+
+                }
+
+                Intent intent = getIntent();
+                finish();
+                startActivity(intent);
+
+                Toast.makeText(getApplicationContext(),
+                        "Ordenado por fecha",
+                        Toast.LENGTH_LONG)
+                        .show();
+            }
+        });
+
     }
 
     /**
@@ -53,7 +214,7 @@ public class VacunasActivity extends AppCompatActivity {
      */
     private class obtenerVacunas extends AsyncTask<Void, Void, Void> {
 
-        public String host = "http://192.168.1.61:8080";
+        public String host = "http://10.9.100.164:8080";
 
         @Override
         protected void onPreExecute() {
@@ -74,15 +235,13 @@ public class VacunasActivity extends AppCompatActivity {
             JSONObject obj = new JSONObject();
             try {
                 obj.put("idHijo", VacunasActivity.this.idHijo);
+                obj.put("order", "id");
+
             } catch (JSONException e) {
                 e.printStackTrace();
             }
 
             String jsonStr = nuevo.sendHTTPData(this.host+"/WebApplication3/webresources/vacunas/obtenerVacunasPost/",obj);
-
-            // Making a request to url and getting response
-            //HttpHandler sh = new HttpHandler();
-            //String jsonStr = sh.makeServiceCall(url);
 
             Log.e(TAG, "Response from url: " + jsonStr);
 
@@ -90,7 +249,6 @@ public class VacunasActivity extends AppCompatActivity {
                 try {
                     JSONArray jsonObj = new JSONArray(jsonStr);
 
-                    // looping through All Contacts
                     for (int i = 0; i < jsonObj.length(); i++) {
                         JSONObject c = jsonObj.getJSONObject(i);
 
@@ -98,23 +256,12 @@ public class VacunasActivity extends AppCompatActivity {
                         String email = c.getString("fecha_aplicacion");
                         String address = c.getString("aplicada");
 
-
-//                        // Phone node is JSON Object
-//                        JSONObject phone = c.getJSONObject("phone");
-//                        String mobile = phone.getString("mobile");
-//                        String home = phone.getString("home");
-//                        String office = phone.getString("office");
-
-                        // tmp hash map for single contact
                         HashMap<String, String> contact = new HashMap<>();
-
-                        // adding each child node to HashMap key => value
 
                         contact.put("name", name);
                         contact.put("email", email);
                         contact.put("mobile", "Inyectada: "+address);
 
-                        // adding contact to contact list
                         contactList.add(contact);
                     }
                 } catch (final JSONException e) {
@@ -166,5 +313,9 @@ public class VacunasActivity extends AppCompatActivity {
         }
 
     }
+
+
+
+
 
 }

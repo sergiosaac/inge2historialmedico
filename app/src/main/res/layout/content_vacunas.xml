@@ -13,24 +13,50 @@
     tools:context="com.example.admin.historialmedico.VacunasActivity"
     tools:showIn="@layout/activity_vacunas">
 
+    <Button
+        android:text="Abc.."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/abc"
+        android:onClick="ordenarAbc"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="61dp"
+        android:layout_alignBottom="@+id/fecha"
+        android:layout_alignEnd="@+id/textView3" />
+
     <ListView
         android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="70dp" />
 
     <TextView
         android:text="Lista de vacunas:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:layout_marginStart="14dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="19dp"
         android:id="@+id/textView3"
         android:textSize="18sp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textStyle="normal|bold" />
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:layout_margin="0dp" />
+
+    <Button
+        android:text="Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="466dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

@@ -3,12 +3,30 @@
 
     <item
         is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_1bb7a102643a4510f88d72c68011f560d2552fe1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
         <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.3.0_ad67b9431d18440b99cb7e8427d4cfd6335612c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_292c71be3563fe8d03e7230b654a3d58653b183c/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -21,6 +39,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_7aea3555192fe816b1c0f812594f4ec84ae60064/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -30,11 +57,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_a5c71ead0d55afa61bdc35a461c16fe938053b4a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="1aea56978ee5223d06aff584310fde89ed2c7b95">
+        sha1="4105d81b46557f1982972232eee63a041aa22263">
         <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_cd99c0c9f3be748f506f7eecb47cad238363e8d9/classes.dex" />
     </item>
     <item
@@ -54,150 +90,6 @@
         revision="25.0.2"
         sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
         <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.3.0_78becaeceda2c6971a88df4d5b77afc5bca1db9e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_9aae3a2840f7c8fe41c95f869a260ad8da0172cd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_4334de1b6d2605bbfa99aed2ea96200a2cdbe3e5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.3.0_808323991484da361f144ba50a4019383da85b31/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f516f034b88d654e1732874132ca67124f44ab67">
-        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a8248de4bdc63eece3222f200043ec9b1d1f3410/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_452f7e9af6b28df65da69aa9a98c5d299fb79967/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_0f6a100b18093a995975ba17b2cd37fd945e71ec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_0bcc98eed1875b990dd2da4cc16cd8d2b196c8ac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_0a9009cf75c16b6e9b3d58cb04072f7157da6a6e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
-        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_788770be07fb641a7121fda4e7636a160bd83263/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_fee5a47e15bcc6a1c862a7efc2597f69868def0f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_b87aa859ab08ce1de68b6be2bb3c72a0726a0168/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cf505d58f5beb3caee8c9fa1308c948d6a300c19">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_12405e2d6010d6526cc8f65c7d82137904d26c5d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_1bb7a102643a4510f88d72c68011f560d2552fe1/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.3.0_292c71be3563fe8d03e7230b654a3d58653b183c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.8.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
-        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.8.0_7aea3555192fe816b1c0f812594f4ec84ae60064/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_a5c71ead0d55afa61bdc35a461c16fe938053b4a/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -237,6 +129,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.8.0_9aae3a2840f7c8fe41c95f869a260ad8da0172cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -264,12 +165,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_4334de1b6d2605bbfa99aed2ea96200a2cdbe3e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.3.0_808323991484da361f144ba50a4019383da85b31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
         <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.3.0_2cfb386c9cfd5788c9c6876c920e5c8960d4df36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f516f034b88d654e1732874132ca67124f44ab67">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a8248de4bdc63eece3222f200043ec9b1d1f3410/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -291,12 +219,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.8.0_452f7e9af6b28df65da69aa9a98c5d299fb79967/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="64a170621a4e2fe8a792620f40c62a4a57865909">
         <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a9c9f42c9a95d1e27a64a87e266cc13034e332b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.8.0_0f6a100b18093a995975ba17b2cd37fd945e71ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.8.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.8.0_0bcc98eed1875b990dd2da4cc16cd8d2b196c8ac/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -315,6 +270,42 @@
         revision="25.0.2"
         sha1="518768f3200963fbfec652f498da2c9d39245234">
         <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_88ff551ff1d12efad5042e9379dc07f7c9faa40b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.3.0_0a9009cf75c16b6e9b3d58cb04072f7157da6a6e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_788770be07fb641a7121fda4e7636a160bd83263/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/design/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.3.0_fee5a47e15bcc6a1c862a7efc2597f69868def0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.3.0_b87aa859ab08ce1de68b6be2bb3c72a0726a0168/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -342,6 +333,15 @@
         revision="25.0.2"
         sha1="518768f3200963fbfec652f498da2c9d39245234">
         <dex dex="/Users/Admin/Documents/Documentos/Facu/2017 - 1/Inge 2 Final/app-android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.3.0_9abb190a48577d51a3858aec213ca82e7f08d0c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d7d2dabca3bf9a8b57571343b2c034921c75219">
+        <dex dex="/Users/Admin/Desktop/terminandoFinalInge2/inge2historialmedico/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_12405e2d6010d6526cc8f65c7d82137904d26c5d/classes.dex" />
     </item>
 
 </items>
